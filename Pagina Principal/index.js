@@ -310,9 +310,9 @@ function renderPanel(idx, direction = 0) {
     gtlYears.offsetHeight;
     gtlYears.style.animation = '';
     gtlConcepto.innerHTML = `<strong>Concepto clave:</strong> ${s.concepto}`;
-    gtlConcepto.style.background = s.bg;
+    gtlConcepto.style.background = '';
+    gtlConcepto.style.color = '#e2e8f0';
     gtlPanel.style.setProperty('--gtl-color', s.color);
-    gtlPanel.style.setProperty('--gtl-bg', s.bg);
     gtlTitle.style.color = s.color;
 
     typewriter(gtlTitle, `${s.icon} ${s.name}`);
@@ -413,3 +413,34 @@ initialSection.style.display = 'block';
 initialSection.offsetHeight;
 initialSection.classList.add('active');
 observeReveal();
+
+// ===== GALERÍA DAZA =====
+(function initGallery() {
+  const gallery = document.getElementById('dazaGallery');
+  if (!gallery) return;
+  const slides = gallery.querySelectorAll('.gallery-slide');
+  const dots   = gallery.querySelectorAll('.gallery-dot');
+  const counter = document.getElementById('galleryCounter');
+  let current = 0;
+  let timer;
+
+  function goTo(idx) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = (idx + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+    if (counter) counter.textContent = `${current + 1} / ${slides.length}`;
+  }
+
+  function autoPlay() {
+    clearInterval(timer);
+    timer = setInterval(() => goTo(current + 1), 3500);
+  }
+
+  document.getElementById('galleryPrev')?.addEventListener('click', () => { goTo(current - 1); autoPlay(); });
+  document.getElementById('galleryNext')?.addEventListener('click', () => { goTo(current + 1); autoPlay(); });
+  dots.forEach(dot => dot.addEventListener('click', () => { goTo(+dot.dataset.slide); autoPlay(); }));
+
+  autoPlay();
+})();
