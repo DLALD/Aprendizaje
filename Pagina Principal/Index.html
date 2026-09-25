@@ -115,188 +115,127 @@
         <p>Con el paso del tiempo, y especialmente a partir del siglo XX, se fue consolidando una nueva visión: la del niño y la niña como <strong>sujetos de derechos</strong>, con dignidad propia, capacidad de participación y necesidad de protección integral. Este recorrido histórico es fundamental para comprender el marco normativo y pedagógico que orienta hoy la atención a las infancias.</p>
       </div>
 
-      <!-- Imagen de referencia -->
-      <div class="ref-image-wrap reveal">
-        <img src="../Recursos/linea de tiempo.jpeg" alt="Infografía: Evolución histórica de los conceptos de niño, niña, niñez, infancia e infancias" class="ref-image" />
-        <p class="ref-image-caption">Referencia visual: Evolución histórica de los conceptos de infancia (De la dependencia al reconocimiento de derechos)</p>
-      </div>
 
-      <!-- TREN INTERACTIVO -->
-      <div class="train-section">
-        <h3 class="timeline-title">🚂 Recorre la historia — haz clic en cada estación</h3>
-        <p class="train-hint">Cada estación representa una época. Haz clic para explorar su contenido.</p>
-
-        <div class="train-track-wrap" role="list" aria-label="Línea de tiempo tipo tren">
-
-          <!-- Riel SVG de fondo -->
-          <div class="rail-line" aria-hidden="true">
-            <div class="rail-top"></div>
-            <div class="rail-bottom"></div>
-            <div class="train-loco" aria-hidden="true">🚂</div>
-          </div>
-
-          <!-- Estaciones -->
-          <div class="stations-grid">
-
-            <div class="station-row" data-pos="top">
-              <button class="station" data-id="0" aria-label="Estación 1: Edad Antigua" style="--sc:#f59e0b;--sl:#fde68a">
-                <span class="st-icon">🏛️</span>
-                <span class="st-num">1</span>
-                <span class="st-name">Edad Antigua</span>
-                <span class="st-years">V a.C.–V d.C.</span>
-                <span class="st-dot" aria-hidden="true"></span>
-              </button>
-            </div>
-
-            <div class="station-row" data-pos="bottom">
-              <button class="station" data-id="1" aria-label="Estación 2: Edad Media" style="--sc:#8b5cf6;--sl:#ddd6fe">
-                <span class="st-icon">⛪</span>
-                <span class="st-num">2</span>
-                <span class="st-name">Edad Media</span>
-                <span class="st-years">Siglos V–XV</span>
-                <span class="st-dot" aria-hidden="true"></span>
-              </button>
-            </div>
-
-            <div class="station-row" data-pos="top">
-              <button class="station" data-id="2" aria-label="Estación 3: Transición a la Modernidad" style="--sc:#0ea5e9;--sl:#bae6fd">
-                <span class="st-icon">📖</span>
-                <span class="st-num">3</span>
-                <span class="st-name">Transición Modernidad</span>
-                <span class="st-years">Siglos XVI–XVII</span>
-                <span class="st-dot" aria-hidden="true"></span>
-              </button>
-            </div>
-
-            <div class="station-row" data-pos="bottom">
-              <button class="station" data-id="3" aria-label="Estación 4: Edad Moderna" style="--sc:#10b981;--sl:#bbf7d0">
-                <span class="st-icon">🏫</span>
-                <span class="st-num">4</span>
-                <span class="st-name">Edad Moderna</span>
-                <span class="st-years">Siglos XVIII–XIX</span>
-                <span class="st-dot" aria-hidden="true"></span>
-              </button>
-            </div>
-
-            <div class="station-row" data-pos="top">
-              <button class="station" data-id="4" aria-label="Estación 5: Siglo XIX" style="--sc:#ec4899;--sl:#fbcfe8">
-                <span class="st-icon">⚖️</span>
-                <span class="st-num">5</span>
-                <span class="st-name">Siglo XIX</span>
-                <span class="st-years">Siglo XIX</span>
-                <span class="st-dot" aria-hidden="true"></span>
-              </button>
-            </div>
-
-            <div class="station-row" data-pos="bottom">
-              <button class="station" data-id="5" aria-label="Estación 6: Siglo XX" style="--sc:#f97316;--sl:#fed7aa">
-                <span class="st-icon">🌍</span>
-                <span class="st-num">6</span>
-                <span class="st-name">Siglo XX</span>
-                <span class="st-years">1924–1959</span>
-                <span class="st-dot" aria-hidden="true"></span>
-              </button>
-            </div>
-
-            <div class="station-row" data-pos="top">
-              <button class="station" data-id="6" aria-label="Estación 7: Ley 1098 de 2006" style="--sc:#14b8a6;--sl:#99f6e4">
-                <span class="st-icon">📜</span>
-                <span class="st-num">7</span>
-                <span class="st-name">Ley 1098 / 2006</span>
-                <span class="st-years">Colombia 2006</span>
-                <span class="st-dot" aria-hidden="true"></span>
-              </button>
-            </div>
-
-            <div class="station-row" data-pos="bottom">
-              <button class="station" data-id="7" aria-label="Estación 8: Siglo XXI" style="--sc:#e11d48;--sl:#fecdd3">
-                <span class="st-icon">🌈</span>
-                <span class="st-num">8</span>
-                <span class="st-name">Siglo XXI</span>
-                <span class="st-years">Siglo XXI</span>
-                <span class="st-dot" aria-hidden="true"></span>
-              </button>
-            </div>
-
-          </div><!-- /stations-grid -->
-        </div><!-- /train-track-wrap -->
-
-        <!-- Progreso visitado -->
-        <div class="train-progress" aria-label="Progreso de estaciones visitadas">
-          <span class="progress-label">Estaciones visitadas:</span>
-          <div class="progress-dots" id="progressDots"></div>
-          <span class="progress-count" id="progressCount">0 / 8</span>
+      <!-- HERO ANIMADO PRE-TIMELINE -->
+      <div class="tl-hero reveal">
+        <div class="tl-hero-particles" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
         </div>
-      </div><!-- /train-section -->
-
-      <!-- PANEL AYUDA VISUAL -->
-      <div class="help-panel reveal" aria-label="Mapa visual de etapas">
-        <div class="help-panel-header">
-          <span class="help-panel-icon">🗺️</span>
-          <h3>Mapa de etapas históricas</h3>
-          <p>Haz clic en cualquier etapa para explorarla. Las etapas se agrupan por grandes períodos.</p>
-        </div>
-        <div class="help-eras">
-          <div class="help-era-group">
-            <span class="help-era-label" style="--eg:#94a3b8">Antigüedad y Medievo</span>
-            <div class="help-era-chips">
-              <button class="help-chip" data-id="0" style="--hc:#f59e0b;--hl:#fde68a">🏛️ Edad Antigua</button>
-              <button class="help-chip" data-id="1" style="--hc:#8b5cf6;--hl:#ddd6fe">⛪ Edad Media</button>
-            </div>
+        <div class="tl-hero-content">
+          <p class="tl-hero-eyebrow">📜 Línea del tiempo interactiva</p>
+          <h3 class="tl-hero-title" id="tlHeroTitle"></h3>
+          <p class="tl-hero-sub">8 etapas · desde la Antigüedad hasta el Siglo XXI</p>
+          <div class="tl-chips">
+            <span class="tl-chip" style="--cc:#f59e0b">🏛️ Antigüedad</span>
+            <span class="tl-chip" style="--cc:#8b5cf6">⛪ Edad Media</span>
+            <span class="tl-chip" style="--cc:#0ea5e9">📖 Modernidad</span>
+            <span class="tl-chip" style="--cc:#10b981">🏫 Ilustración</span>
+            <span class="tl-chip" style="--cc:#ec4899">⚖️ S. XIX</span>
+            <span class="tl-chip" style="--cc:#f97316">🌍 S. XX</span>
+            <span class="tl-chip" style="--cc:#14b8a6">📜 Ley 1098</span>
+            <span class="tl-chip" style="--cc:#e11d48">🌈 S. XXI</span>
           </div>
-          <div class="help-era-group">
-            <span class="help-era-label" style="--eg:#94a3b8">Modernidad</span>
-            <div class="help-era-chips">
-              <button class="help-chip" data-id="2" style="--hc:#0ea5e9;--hl:#bae6fd">📖 Trans. Modernidad</button>
-              <button class="help-chip" data-id="3" style="--hc:#10b981;--hl:#bbf7d0">🏫 Edad Moderna</button>
-            </div>
-          </div>
-          <div class="help-era-group">
-            <span class="help-era-label" style="--eg:#94a3b8">Siglos XIX–XX</span>
-            <div class="help-era-chips">
-              <button class="help-chip" data-id="4" style="--hc:#ec4899;--hl:#fbcfe8">⚖️ Siglo XIX</button>
-              <button class="help-chip" data-id="5" style="--hc:#f97316;--hl:#fed7aa">🌍 Siglo XX</button>
-            </div>
-          </div>
-          <div class="help-era-group">
-            <span class="help-era-label" style="--eg:#94a3b8">Era de Derechos</span>
-            <div class="help-era-chips">
-              <button class="help-chip" data-id="6" style="--hc:#14b8a6;--hl:#99f6e4">📜 Ley 1098/2006</button>
-              <button class="help-chip" data-id="7" style="--hc:#e11d48;--hl:#fecdd3">🌈 Siglo XXI</button>
-            </div>
-          </div>
-        </div>
-        <div class="help-legend">
-          <span class="legend-item"><span class="legend-dot unvisited"></span>Sin explorar</span>
-          <span class="legend-item"><span class="legend-dot visited-dot"></span>Explorada ✓</span>
-          <span class="legend-item active-legend"><span class="legend-dot active-dot"></span>Activa ahora</span>
+          <button class="tl-cta-btn" id="tlCtaBtn">Explorar la historia ↓</button>
         </div>
       </div>
+      <div class="gtl-wrap">
+        <h3 class="timeline-title">🗺️ Explora la historia — selecciona una etapa</h3>
+        <p class="train-hint">Haz clic en cada parada para descubrir su contenido.</p>
 
-      <!-- MODAL -->
-      <div class="modal-overlay" id="stationModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
-        <div class="modal-box">
-          <button class="modal-close" id="modalClose" aria-label="Cerrar">✕</button>
+        <!-- Barra de progreso -->
+        <div class="gtl-progress-bar">
+          <div class="gtl-progress-fill" id="gtlFill"></div>
+        </div>
+        <p class="gtl-progress-label" id="gtlLabel">0 de 8 etapas exploradas</p>
 
-          <!-- Mini mapa dentro del modal -->
-          <div class="modal-minimap" id="modalMinimap" aria-label="Posición en la línea de tiempo"></div>
+        <!-- Paradas -->
+        <div class="gtl-track" role="list">
+          <div class="gtl-line" aria-hidden="true"></div>
 
-          <div class="modal-header" id="modalHeader">
-            <span class="modal-icon" id="modalIcon"></span>
-            <div>
-              <div class="modal-num" id="modalNum"></div>
-              <h3 id="modalTitle"></h3>
-              <span class="modal-years" id="modalYears"></span>
+          <button class="gtl-stop" data-idx="0" style="--gc:#f59e0b;--gl:#fde68a" aria-label="Etapa 1: Edad Antigua">
+            <img src="../Recursos/TimeLine/1.jpeg" alt="" />
+            <span class="gtl-badge">1</span>
+            <span class="gtl-label">Edad Antigua</span>
+            <span class="gtl-year">V a.C.–V d.C.</span>
+          </button>
+
+          <button class="gtl-stop" data-idx="1" style="--gc:#8b5cf6;--gl:#ddd6fe" aria-label="Etapa 2: Edad Media">
+            <img src="../Recursos/TimeLine/2.jpg" alt="" />
+            <span class="gtl-badge">2</span>
+            <span class="gtl-label">Edad Media</span>
+            <span class="gtl-year">Siglos V–XV</span>
+          </button>
+
+          <button class="gtl-stop" data-idx="2" style="--gc:#0ea5e9;--gl:#bae6fd" aria-label="Etapa 3: Transición Modernidad">
+            <img src="../Recursos/TimeLine/3.jpg" alt="" />
+            <span class="gtl-badge">3</span>
+            <span class="gtl-label">Trans. Modernidad</span>
+            <span class="gtl-year">XVI–XVII</span>
+          </button>
+
+          <button class="gtl-stop" data-idx="3" style="--gc:#10b981;--gl:#bbf7d0" aria-label="Etapa 4: Edad Moderna">
+            <img src="../Recursos/TimeLine/4.jpeg" alt="" />
+            <span class="gtl-badge">4</span>
+            <span class="gtl-label">Edad Moderna</span>
+            <span class="gtl-year">XVIII–XIX</span>
+          </button>
+
+          <button class="gtl-stop" data-idx="4" style="--gc:#ec4899;--gl:#fbcfe8" aria-label="Etapa 5: Siglo XIX">
+            <img src="../Recursos/TimeLine/5.jpg" alt="" />
+            <span class="gtl-badge">5</span>
+            <span class="gtl-label">Siglo XIX</span>
+            <span class="gtl-year">Siglo XIX</span>
+          </button>
+
+          <button class="gtl-stop" data-idx="5" style="--gc:#f97316;--gl:#fed7aa" aria-label="Etapa 6: Siglo XX">
+            <img src="../Recursos/TimeLine/6.jpg" alt="" />
+            <span class="gtl-badge">6</span>
+            <span class="gtl-label">Siglo XX</span>
+            <span class="gtl-year">1924–1959</span>
+          </button>
+
+          <button class="gtl-stop" data-idx="6" style="--gc:#14b8a6;--gl:#99f6e4" aria-label="Etapa 7: Ley 1098">
+            <img src="../Recursos/TimeLine/7.jpg" alt="" />
+            <span class="gtl-badge">7</span>
+            <span class="gtl-label">Ley 1098/2006</span>
+            <span class="gtl-year">Colombia 2006</span>
+          </button>
+
+          <button class="gtl-stop" data-idx="7" style="--gc:#e11d48;--gl:#fecdd3" aria-label="Etapa 8: Siglo XXI">
+            <img src="../Recursos/TimeLine/8.jpeg" alt="" />
+            <span class="gtl-badge">8</span>
+            <span class="gtl-label">Siglo XXI</span>
+            <span class="gtl-year">Siglo XXI</span>
+          </button>
+        </div>
+
+        <!-- Panel de contenido inline -->
+        <div class="gtl-panel" id="gtlPanel" hidden>
+          <div class="gtl-panel-inner" id="gtlPanelInner">
+            <div class="gtl-panel-img-wrap">
+              <img id="gtlPanelImg" src="" alt="" />
+              <div class="gtl-panel-img-overlay" aria-hidden="true"></div>
+              <div class="gtl-panel-badge" id="gtlPanelBadge"></div>
+            </div>
+              <div class="gtl-panel-body">
+              <div class="gtl-panel-tag" id="gtlPanelTag"></div>
+              <div class="gtl-title-row">
+                <h4 id="gtlPanelTitle"></h4>
+              </div>
+              <span class="gtl-panel-years" id="gtlPanelYears"></span>
+              <ul id="gtlPanelList"></ul>
+              <div class="gtl-item-ctx" id="gtlItemCtx" hidden></div>
+              <div class="gtl-panel-concepto" id="gtlPanelConcepto"></div>
+              <div class="gtl-panel-nav">
+                <button class="gtl-nav-btn" id="gtlPrev">← Anterior</button>
+                <button class="gtl-nav-btn gtl-nav-close" id="gtlClose">✕ Cerrar</button>
+                <button class="gtl-nav-btn" id="gtlNext">Siguiente →</button>
+              </div>
             </div>
           </div>
-          <ul class="modal-list" id="modalList"></ul>
-          <div class="modal-concepto" id="modalConcepto"></div>
-          <div class="modal-nav">
-            <button class="modal-prev" id="modalPrev" aria-label="Estación anterior">← Anterior</button>
-            <button class="modal-next" id="modalNext" aria-label="Siguiente estación">Siguiente →</button>
-          </div>
         </div>
-      </div>
+      </div><!-- /gtl-wrap -->
 
       <!-- Frase de cierre -->
       <div class="banner-frase reveal" role="complementary" aria-label="Frase de cierre">
@@ -350,6 +289,17 @@
   <footer>
     <p>Curso <em>Infancias: Historias y Perspectivas</em> — UNAD — ECEDU &nbsp;|&nbsp; Producto integrador académico</p>
   </footer>
+
+  <!-- Notificación Win7 — fuera del panel para evitar overflow:hidden -->
+  <div class="win7-notif" id="win7Notif" hidden>
+    <div class="win7-notif-header">
+      <img class="win7-notif-icon" id="win7Icon" src="" alt="" />
+      <span class="win7-notif-title" id="win7Title"></span>
+      <button class="win7-notif-close" id="win7Close" aria-label="Cerrar">✕</button>
+    </div>
+    <p class="win7-notif-text" id="win7Text"></p>
+    <div class="win7-notif-tail" aria-hidden="true"></div>
+  </div>
 
   <script src="index.js"></script>
 </body>
